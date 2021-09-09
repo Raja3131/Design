@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Form, Button, ListGroup,Table,DropdownButton,Dropdown } from "react-bootstrap";
 
-class TodoList extends Component{
+class Data extends Component{
     profession={myarray:['Intern','Junior','Senior']}
     constructor() {
         super();
@@ -34,7 +34,7 @@ class TodoList extends Component{
         return(
             <>
             <Form onSubmit={this.addData}>
-                <Form.Group controlId="formBasicTaskTitle">
+                <Form.Group controlId="formBasicText">
                     <Form.Label>Text:</Form.Label>
                     <Form.Control type="text" placeholder="Enter A Text" name="text"/>
                 </Form.Group>
@@ -86,4 +86,4 @@ class TodoList extends Component{
     }
 }
 
-export default TodoList;
+export default Data;
